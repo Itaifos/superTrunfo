@@ -1,4 +1,4 @@
-public class Carro {
+public class Carro{
     private String pais;
     private String marca;
     private String modelo;
@@ -26,7 +26,7 @@ public class Carro {
         this.hp = hp;
         this.aceleracao = aceleracao;
         this.cilindrada = cilindrada;
-        //this.
+        this.kg = kg;
 
     }
 
