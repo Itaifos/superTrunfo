@@ -23,6 +23,14 @@ public class Carta {
         return superTrunfo;
     }
 
+    public boolean ehSuperTrunfo(){
+        if (getSuperTrunfo() == true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
 }
 

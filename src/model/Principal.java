@@ -4,7 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 
 
@@ -16,16 +16,12 @@ public class Principal{
             byte[] texto = Files.readAllBytes(arquivoDeOrigem);
             String leitura = new String(texto);
     
-            JOptionPane.showMessageDialog(null, leitura);
+            //JOptionPane.showMessageDialog(null, leitura);
         } catch (Exception erro) {
             
         } 
 
-        Carro[] baralho = new Carro();
-
-        public static Carro embaralhar() {
-            return baralho;
-        }
+        
 
         
     }

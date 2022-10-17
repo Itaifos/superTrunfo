@@ -19,14 +19,14 @@ public class Carro{
         int cilindrada,
         int kg
     ){
-        this.pais = pais;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.velocidade = velocidade;
-        this.hp = hp;
-        this.aceleracao = aceleracao;
-        this.cilindrada = cilindrada;
-        this.kg = kg;
+        setPais(pais);
+        setMarca(marca);
+        setModelo(modelo);
+        setVelocidade(velocidade);
+        setHp(hp);
+        setAceleracao(aceleracao);
+        setCilindrada(cilindrada);
+        setKg(kg);
 
     }
 
@@ -56,5 +56,28 @@ public class Carro{
         this.kg = kg;
     }
 
-
+    public String getPais() {
+        return pais;
+    }
+    public String getMarca() {
+        return marca;
+    }
+    public String getModelo() {
+        return modelo;
+    }
+    public int getVelocidade() {
+        return velocidade;
+    }
+    public int getHp() {
+        return hp;
+    }
+    public int getAceleracao() {
+        return aceleracao;
+    }
+    public int getCilindrada() {
+        return cilindrada;
+    }
+    public int getKg() {
+        return kg;
+    }
 }
