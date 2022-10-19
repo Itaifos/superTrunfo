@@ -1,28 +1,21 @@
-import java.io.File;
-import java.lang.reflect.Method;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-//import javax.swing.JOptionPane;
-
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 
 public class Principal{
-    public static void main(String[] args) {
-        
-        Path arquivoDeOrigem = Paths.get("cartas.txt");
-        try {
-            byte[] texto = Files.readAllBytes(arquivoDeOrigem);
-            String leitura = new String(texto);
-    
-            //JOptionPane.showMessageDialog(null, leitura);
-        } catch (Exception erro) {
-            
-        } 
+    public static void main(String[] args) throws FileNotFoundException {
 
-        
+        FileInputStream arquivoDeOrigem = new FileInputStream("cartas.txt");
+        Scanner lerArquivo = new Scanner(arquivoDeOrigem, "UTF-8");
 
+        while (lerArquivo.hasNext()) {
+
+            String linha = lerArquivo.nextLine();
+            if (linha != null && linha.isEmpty()) {
+                System.out.println(linha);
+            }
+        }
         
     }
 
