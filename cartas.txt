@@ -1,1 +1,10 @@
-Olá mundo
+A1;false;Alemanha;Ford;Granada Ghia 3.0;180;138;11;2993;1365
+A2;false;Alemanha;Opel;Diplomat V8; 205;230;10;5354;1690
+B1;false;Inglaterra;Rolls-Royce;Camargue;190;200;12;6750;2347
+B2;false;Inglaterra;Rover;3500 S;190;141;11;3470;1360
+C1;false;Itália;Alfa Rommeo;2000 Spider;198;131;11;1962;1045
+C2;false;Alemanha;Mercedes;450 SL;215;225;9;4520;1580
+D1;false;USA;Buick;Century;170;165;12;5665;1860
+D2;true;USA;Chevrolet; Camaro LT;180;155;12;5657;1690
+E1;false;Itália;Alfetta;GT;190;121;11;1779;1080
+E2;false;Itália;Alfa Rommeo;Montreal;220;195;8;2593;1310

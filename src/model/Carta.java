@@ -1,17 +1,17 @@
 public class Carta {
-    String classeDeCarta;
-    boolean superTrunfo;
+    private String classeDeCarta;
+    private boolean superTrunfo;
 
     public Carta(String classeDeCarta, boolean superTrunfo){ 
-        this.classeDeCarta = classeDeCarta;
-        this.superTrunfo = superTrunfo;
+        setClasseDeCarta(classeDeCarta);
+        setSuperTrunfo(superTrunfo);
     }
 
-    public void setClasseDeCarta(String classeDeCarta) {
+    private void setClasseDeCarta(String classeDeCarta) {
         this.classeDeCarta = classeDeCarta;
     }
 
-    public void setSuperTrunfo(boolean superTrunfo) {
+    private void setSuperTrunfo(boolean superTrunfo) {
         this.superTrunfo = superTrunfo;
     }
 
@@ -31,6 +31,9 @@ public class Carta {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return getClasseDeCarta() + getSuperTrunfo();
+    }
 }
 

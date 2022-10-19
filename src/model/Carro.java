@@ -1,4 +1,4 @@
-public class Carro{
+public class Carro extends Carta{
     private String pais;
     private String marca;
     private String modelo;
@@ -10,6 +10,8 @@ public class Carro{
     private int kg;
 
     public Carro(
+        String classeDeCarta,
+        boolean superTrunfo,
         String pais,
         String marca,
         String modelo,
@@ -19,6 +21,7 @@ public class Carro{
         int cilindrada,
         int kg
     ){
+        super(classeDeCarta, superTrunfo);
         setPais(pais);
         setMarca(marca);
         setModelo(modelo);
@@ -79,5 +82,11 @@ public class Carro{
     }
     public int getKg() {
         return kg;
+    }
+
+    @Override
+    public String toString() {
+        return "Carro" + super.toString() + getPais() + getMarca() + getModelo() + getVelocidade() + getHp() + getAceleracao() + getCilindrada() + getKg();
+
     }
 }
