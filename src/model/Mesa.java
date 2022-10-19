@@ -39,7 +39,12 @@ public class Mesa {
             }
         }
         lerArquivo.close();
-        //Collections.shuffle(carros);
+
+        for(Carro c : carros){
+            System.out.println(c);
+        }
+        
+        Collections.shuffle(carros);
         
     }
 }

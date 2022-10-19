@@ -33,7 +33,7 @@ public class Carta {
 
     @Override
     public String toString() {
-        return getClasseDeCarta() + getSuperTrunfo();
+        return "Clase: " + getClasseDeCarta() + " Super Trunfo: " + getSuperTrunfo();
     }
 }
 

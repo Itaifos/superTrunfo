@@ -86,7 +86,7 @@ public class Carro extends Carta{
 
     @Override
     public String toString() {
-        return "Carro" + super.toString() + getPais() + getMarca() + getModelo() + getVelocidade() + getHp() + getAceleracao() + getCilindrada() + getKg();
+        return super.toString() + " " + getPais() + " " + getMarca() + " " + getModelo() + " " + getVelocidade() + " " + getHp() + " " + getAceleracao() + " " + getCilindrada() + " " + getKg();
 
     }
 }
