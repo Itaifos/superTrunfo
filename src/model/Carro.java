@@ -89,4 +89,7 @@ public class Carro extends Carta{
         return super.toString() + " " + getPais() + " " + getMarca() + " " + getModelo() + " " + getVelocidade() + " " + getHp() + " " + getAceleracao() + " " + getCilindrada() + " " + getKg();
 
     }
+
+    
+    
 }

@@ -1,5 +1,8 @@
+import java.util.List;
+
 public class Jogador {
     private String nome;
+    private List<Carro> mao; 
     private int pontos;
 
     
