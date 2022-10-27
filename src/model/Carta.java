@@ -1,4 +1,4 @@
-public class Carta {
+public abstract class Carta {
     private String classeDeCarta;
     private boolean superTrunfo;
 
@@ -33,7 +33,7 @@ public class Carta {
 
     @Override
     public String toString() {
-        return "Clase: " + getClasseDeCarta() + " Super Trunfo: " + getSuperTrunfo();
+        return "Clase: " + getClasseDeCarta() + "\nSuper Trunfo: " + getSuperTrunfo();
     }
 }
 

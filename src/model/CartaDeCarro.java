@@ -1,4 +1,5 @@
-public class Carro extends Carta{
+
+public class CartaDeCarro extends Carta{
     private String pais;
     private String marca;
     private String modelo;
@@ -9,7 +10,7 @@ public class Carro extends Carta{
     private int cilindrada;
     private int kg;
 
-    public Carro(
+    public CartaDeCarro(
         String classeDeCarta,
         boolean superTrunfo,
         String pais,
@@ -33,29 +34,29 @@ public class Carro extends Carta{
 
     }
 
-    public void setPais(String pais) {
+    private void setPais(String pais) {
         this.pais = pais;
     }
-    public void setMarca(String marca) {
+    private void setMarca(String marca) {
         this.marca = marca;
     }
-    public void setModelo(String modelo) {
+    private void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
-    public void setVelocidade(int velocidade) {
+    private void setVelocidade(int velocidade) {
         this.velocidade = velocidade;
     }
-    public void setHp(int hp) {
+    private void setHp(int hp) {
         this.hp = hp;
     }
-    public void setAceleracao(int aceleracao) {
+    private void setAceleracao(int aceleracao) {
         this.aceleracao = aceleracao;
     }
-    public void setCilindrada(int cilindrada) {
+    private void setCilindrada(int cilindrada) {
         this.cilindrada = cilindrada;
     }
-    public void setKg(int kg) {
+    private void setKg(int kg) {
         this.kg = kg;
     }
 
@@ -84,11 +85,13 @@ public class Carro extends Carta{
         return kg;
     }
 
+
     @Override
     public String toString() {
-        return super.toString() + " " + getPais() + " " + getMarca() + " " + getModelo() + " " + getVelocidade() + " " + getHp() + " " + getAceleracao() + " " + getCilindrada() + " " + getKg();
+        return super.toString() + "\nPais: " + getPais() + "\nMarca: " + getMarca() + "\nModelo: " + getModelo() + "\nVelocidade " + getVelocidade() + "\nHp: " + getHp() + "\nAceleração: " + getAceleracao() + "\nCilindrada: " + getCilindrada() + "\nKg: " + getKg() + "\n";
 
     }
+
 
     
     
